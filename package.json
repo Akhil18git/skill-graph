@@ -1,0 +1,34 @@
+{
+  "name": "skill-graph",
+  "version": "1.0.0",
+  "description": "Interactive AI Skill & Career Graph powered by openCypher and graph data modeling",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/seed.js",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "graph-database",
+    "neo4j",
+    "opencypher",
+    "cognodb",
+    "career-intelligence",
+    "react",
+    "express"
+  ],
+  "author": "SkillGraph Team",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "neo4j-driver": "^5.21.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
